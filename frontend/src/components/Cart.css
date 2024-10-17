@@ -1,0 +1,202 @@
+/* Import a font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+/* Reset default styles and set a base font-family */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+/* Define custom CSS variables */
+:root {
+  --text-clr: #4f4f4f;
+}
+
+/* Global text styling */
+p {
+  color: #6c757d;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: var(--text-clr);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--text-clr);
+}
+
+/* Heading 2 styles */
+h2 {
+  color: var(--text-clr);
+  font-size: 1.5rem;
+}
+
+/* Main cart container */
+.main_cart {
+  background: #fff;
+}
+
+/* Reset card border */
+.card {
+  border: none;
+}
+
+/* Product image styles */
+.product_img img {
+  min-width: 200px;
+  max-height: 200px;
+}
+
+/* Product name styles */
+.product_name {
+  color: black;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* Card title paragraph styles */
+.card-title p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Remove and wish text styles */
+.remove_wish p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+/* Price and money styles */
+.price_money h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Set quantity container */
+.set_quantity {
+  position: relative;
+}
+
+/* Quantity note styles */
+.set_quantity::after {
+  content: "(Note, 1 piece)";
+  width: auto;
+  height: auto;
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+  right: 1.5rem;
+  font-size: 0.8rem;
+}
+
+/* Page link styles */
+.page-link {
+  line-height: 16px;
+  width: 45px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #495057;
+  background: #f0f0f0;
+  border: none;
+}
+
+/* Page item input styles */
+.page-item input {
+  line-height: 22px;
+  padding: 3px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f0f0f0;
+  border: none;
+}
+
+/* Page link hover styles */
+.page-link:hover {
+  text-decoration: none;
+  color: #495057;
+  background: #ddd;
+  outline: none !important;
+}
+
+/* Page link focus styles */
+.page-link:focus {
+  box-shadow: none;
+}
+
+/* Individual price styles */
+.price_indiv p {
+  font-size: 1.1rem;
+}
+
+/* Heart icon hover style */
+.fa-heart:hover {
+  color: red;
+}
+
+/* Adjust padding for heart and trash icons */
+.fa-heart, .fa-trash-alt {
+  padding: 10px;
+}
+
+.fa-trash-alt:hover {
+  color: blue;
+}
+
+/* Button style */
+.button {
+  background-color: powderblue;
+  color: black;
+  border-radius: 20%;
+}
+
+/* Cart container padding */
+.cart {
+  padding: 20px;
+}
+/* Cart.css */
+.fi-trash-icon {
+  color: #333;
+}
+.de{
+  padding-left: 10px;
+  font-size: larger;
+}
+/* Cart.css */
+.remove-item-button {
+  background-color:blue;
+  color: #fff;
+  border: none;
+  padding: 10px 10px; /* Adjust padding as needed */
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  outline: none; /* Remove default button focus outline */
+}
+
+.remove-item-button:hover {
+  background-color:blue;
+}
+.pre-order-item {
+  padding: 5px; /* Adjust the padding as needed */
+  background-color: #f5f5f5; /* Background color for pre-order items */
+}
+
+.pre-order-item .product_name {
+  font-size: 1.5rem; /* Adjust font size */
+  color: #333; /* Text color */
+}

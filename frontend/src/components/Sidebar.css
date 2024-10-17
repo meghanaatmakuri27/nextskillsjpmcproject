@@ -1,0 +1,125 @@
+/* Sidebar container and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    left: 0;
+    background: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .sidebar .text {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1e1e1e;
+    padding-bottom: 10px;
+  }
+  
+  nav ul {
+    background: #1b1b1b;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+  }
+  
+  nav ul li {
+    line-height: 60px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding-left: 30px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+  }
+  
+  nav ul li a:hover {
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+  }
+  
+  nav ul ul {
+    position: static;
+  }
+  
+  nav ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+  }
+  
+  nav ul ul li a {
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 80px;
+  }
+  
+  .nav ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+  }
+  
+  .sub-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sub-menu li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sub-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    display: block;
+  }
+  
+  .sub-menu a:hover {
+    background-color: white;
+  }
+  
+  /* Specific styles for the logout button */
+  .logout-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: auto; /* Pushes the button to the bottom of the sidebar */
+    margin-bottom: 20px; /* Adds space below the logout button */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #333; /* Darken background on hover */
+    color: cyan; /* Change text color on hover */
+  }
+  
